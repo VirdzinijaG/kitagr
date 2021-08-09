@@ -44,11 +44,17 @@ console.log(b); // 10
 {
     let c = 20;
     console.log(b, c);
+    function testas () {
+        let i = 60;
+        // console.log(b, c, d, e, i); mes klaida del d, nes jis yra kita skaupe
+        console.log(b, c, e, i); // be d atspausdins
+    }
     {
         let d = 30;
         var e = 40;
         let b = 50;
         console.log(b, c, d, e) ; // 50 20 30 40 spausdina skaupo reiksmes
+        testas();
     }
 }
 console.log(b, e); // atspausdina b=10, nes main skaupe ir e=40, nes deklaruota su var ir buvo hoistinamas
