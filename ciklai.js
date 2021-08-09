@@ -47,3 +47,12 @@ do {
 } while (e < 3); // tada tikrina salyga
 
 console.log("labas", e); // labas ir 9, nes buvo e++
+
+
+
+
+for (let i = 1; i < 3; i++) {
+    console.log(i); // atspausdins 1 2
+}
+// console.log("pabaiga", i);  i is not defined, nes jis apibreztas fot viduje
+// ciklas for turi savo skaupa
