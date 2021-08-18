@@ -35,3 +35,21 @@ labas2("Jonas"); // Labas Jonas Bepavardis // paimta reiksme is funkcijos
 labas2(); // Labas Bevardis Bepavardis
 labas2("Jonas", "Jonaitis", "Ponas"); // Labas Jonas Jonaitis undefined
 labas2(undefined, "Jonaitis", "Jonas"); // Labas Bevardis Jonaitis
+
+
+console.log("-----------");
+
+let zmogus = {
+    vardas: "Jonas",
+    pavarde: "Jonaitis",
+    labas: () => {
+        console.log("Labas", this.vardas, this.pavarde);
+    }
+}
+
+zmogus.labas() // Labas undefined undefined
+
+// arrow funkcija this neturi ir grazina undefined
+// ne arrow funckija turi savo this ir atspausditnu Labas Jonas Jonaitis
+// i prototype nedeti arrow function
+
