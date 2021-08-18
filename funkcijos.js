@@ -14,3 +14,17 @@ testas = function labas() {
 testas();
 
 // labas(); // labas is not defined
+
+
+let o = {
+    savybe: "reiksme",
+    kitaSavybe: 165,
+    testas() {
+        console.log(this.savybe, this.kitaSavybe);
+    }
+}
+
+o.testas();
+
+let t = o.testas;
+t(); // undefined undefined neranda this
